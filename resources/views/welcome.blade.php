@@ -60,13 +60,25 @@
 </section>
 
 <!-- Demonstração -->
-<section class="py-20 bg-white">
+<section class="bg-white">
     <div class="container mx-auto px-6 text-center">
         <h3 class="text-3xl font-bold text-blue-600 mb-6">Veja como é fácil usar</h3>
-        <img src="https://cdn.dribbble.com/users/211151/screenshots/12168642/media/edbb6f7a7fbcf80d29e38b5dc89b733d.png" alt="Mockup PetCare"
-             class="mx-auto rounded-xl shadow-lg max-w-3xl">
+
+        <div class="flex items-center justify-center bg-gray-50 py-10">
+            <video
+                autoplay
+                loop
+                muted
+                playsinline
+                class="border-4 border-blue-500 rounded-2xl shadow-lg w-full max-w-3xl"
+            >
+                <source src="{{ asset('gif.mp4') }}" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+            </video>
+        </div>
     </div>
 </section>
+
 
 <!-- CTA -->
 <section id="cta" class="py-20 bg-blue-600 text-white text-center">
