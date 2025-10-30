@@ -51,6 +51,13 @@ class PetResource extends Resource
         ]);
     }
 
+    public static function getEloquentQuery(): Builder
+    {
+        return parent::getEloquentQuery()
+            ->where('user_id', auth()->id());
+    }
+
+
     public static function getRelations(): array
     {
         return [

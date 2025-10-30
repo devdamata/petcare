@@ -9,4 +9,10 @@ use Filament\Resources\Pages\CreateRecord;
 class CreatePet extends CreateRecord
 {
     protected static string $resource = PetResource::class;
+
+    protected function mutateFormDataBeforeCreate(array $data): array
+    {
+        $data['user_id'] = auth()->id();
+        return $data;
+    }
 }

@@ -10,6 +10,13 @@ class EditPet extends EditRecord
 {
     protected static string $resource = PetResource::class;
 
+    protected function mutateFormDataBeforeSave(array $data): array
+    {
+        $data['user_id'] = auth()->id();
+        return $data;
+    }
+
+
     protected function getHeaderActions(): array
     {
         return [
