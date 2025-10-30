@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Medicine extends Model
@@ -17,7 +18,12 @@ class Medicine extends Model
         'next_application_date',
     ];
 
-    public function pet(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function pet(): BelongsTo
     {
         return $this->belongsTo(Pet::class);
     }

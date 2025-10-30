@@ -28,6 +28,7 @@ class AdminPanelProvider extends PanelProvider
             ->path('admin')
             ->brandName('🐾 PetCare')
             ->login()
+            ->registration()
             ->colors([
                 'primary' => '#2563eb',
             ])

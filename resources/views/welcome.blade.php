@@ -15,7 +15,7 @@
         <nav class="space-x-6">
             <a href="#sobre" class="hover:text-blue-600 transition">Sobre</a>
             <a href="#funcionalidades" class="hover:text-blue-600 transition">Funcionalidades</a>
-            <a href="#cta" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Começar Agora</a>
+            <a href="{{ url('/admin/login') }}" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Começar Agora</a>
         </nav>
     </div>
 </header>
@@ -24,7 +24,7 @@
 <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-r from-blue-600 to-blue-400 text-white px-6">
     <h2 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Gerencie a Saúde do seu Pet com Facilidade 🐶🐱</h2>
     <p class="max-w-2xl text-lg mb-6">Acompanhe vacinas, vermífugos e medicamentos do seu pet em um só lugar. Cuide com amor e tecnologia!</p>
-    <a href="#cta" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-100 transition">Começar Agora</a>
+    <a href="{{ url('/admin/login') }}" class="bg-white text-blue-600 font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-blue-100 transition">Começar Agora</a>
 </section>
 
 <!-- Sobre -->
@@ -72,7 +72,7 @@
 <section id="cta" class="py-20 bg-blue-600 text-white text-center">
     <h3 class="text-4xl font-bold mb-4">Cuide melhor do seu pet!</h3>
     <p class="mb-6 text-lg">Crie sua conta gratuita e comece a organizar a saúde do seu melhor amigo agora mesmo.</p>
-    <a href="#" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">Começar Agora</a>
+    <a href="{{ url('/admin/login') }}" class="bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg hover:bg-gray-100 transition">Começar Agora</a>
 </section>
 
 <!-- Rodapé -->
