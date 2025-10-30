@@ -11,6 +11,7 @@ class Medicine extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'pet_id',
         'name',
         'type',

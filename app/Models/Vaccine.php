@@ -11,6 +11,7 @@ class Vaccine extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'pet_id',
         'name',
         'application_date',
